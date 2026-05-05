@@ -1,0 +1,41 @@
+$main-color: red;
+$text-color: gold;
+$bt-color: rgb(101, 101, 241);
+
+body{
+  background-color: black;
+}
+h1{
+  color: $main-color;
+}
+p{
+  color: $text-color;
+}
+.submit{
+  color: $bt-color;
+  transform: all 0.3 ease;
+  border-radius: 15px;
+  transition: 0.2 ease, transform 1 ease;
+}
+.submit:hover{
+  color: $text-color;
+  transform: scale(1.1);
+  cursor: pointer;
+  background-color: black;
+}
+.link {
+  font-family: monospace;
+  color: blue;
+  text-align: uppercase;
+  font-size: 20px;
+  line-height: 20px;
+  text-indent: 20px;
+  letter-spacing: 10px;
+}
+
+.link:hover{
+  color:green;
+  text-decoration: underline;
+  font-size: 25px;
+  transition: 0.5s;
+}

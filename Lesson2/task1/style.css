@@ -1,0 +1,33 @@
+body {
+  background-color: #f1f2f6;
+  font-family: Arial, sans-serif;
+}
+
+.wrapper {
+  text-align: center;
+}
+.wrapper h1 {
+  color: #6c5ce7;
+}
+.wrapper .card {
+  background-color: #ffffff;
+  border: 2px solid #6c5ce7;
+}
+.wrapper .card h2 {
+  color: #2d3436;
+}
+.wrapper .card p {
+  color: #2d3436;
+}
+.wrapper .card .buttons .primary-btn {
+  background-color: #6c5ce7;
+  color: #ffffff;
+  border: none;
+}
+.wrapper .card .buttons .secondary-btn {
+  background-color: #00b894;
+  color: #ffffff;
+  border: none;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,46 @@
+$primary-color: #6c5ce7;
+$secondary-color: #00b894;
+$text-color: #2d3436;
+$page-bg: #f1f2f6;
+$card-bg: #ffffff;
+$button-text: #ffffff;
+
+body {
+  background-color: $page-bg;
+  font-family: Arial, sans-serif;
+}
+
+.wrapper {
+  text-align: center;
+
+  h1 {
+    color: $primary-color;
+  }
+
+  .card {
+    background-color: $card-bg;
+    border: 2px solid $primary-color;
+
+    h2 {
+      color: $text-color;
+    }
+
+    p {
+      color: $text-color;
+    }
+
+    .buttons {
+      .primary-btn {
+        background-color: $primary-color;
+        color: $button-text;
+        border: none;
+      }
+
+      .secondary-btn {
+        background-color: $secondary-color;
+        color: $button-text;
+        border: none;
+      }
+    }
+  }
+}

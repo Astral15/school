@@ -1,0 +1,21 @@
+body {
+  background-color: aqua;
+}
+
+.start-btn {
+  border: none;
+  padding: 10px 18px;
+  color: aqua;
+  font-size: 16px;
+  background: red;
+}
+
+.more-btn {
+  border: none;
+  padding: 10px 18px;
+  color: aqua;
+  font-size: 16px;
+  background: seagreen;
+}
+
+/*# sourceMappingURL=style.css.map */

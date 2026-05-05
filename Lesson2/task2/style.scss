@@ -1,0 +1,57 @@
+$primary-color: #0984e3;
+$secondary-color: #6c5ce7;
+$text-color: #2d3436;
+$bg-color: #dfe6e9;
+$card-bg: #ffffff;
+$price-color: #e17055;
+$spacing: 20px;
+$radius: 12px;
+
+body {
+  background-color: $bg-color;
+  font-family: Arial, sans-serif;
+}
+
+.product-card {
+  background-color: $card-bg;
+  width: 380px;
+  padding: $spacing;
+  border-radius: $radius;
+
+  h1 {
+    color: $primary-color;
+    font-size: 28px;
+  }
+
+  .content {
+    .description {
+      color: $text-color;
+      font-size: 17px;
+      line-height: 1.5;
+    }
+
+    .price {
+      color: $price-color;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .buttons {
+      .buy-btn {
+        background-color: $primary-color;
+        color: white;
+        border: none;
+        padding: 10px 18px;
+        border-radius: 8px;
+      }
+
+      .details-btn {
+        background-color: $secondary-color;
+        color: white;
+        border: none;
+        padding: 10px 18px;
+        border-radius: 8px;
+      }
+    }
+  }
+}

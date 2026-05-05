@@ -1,0 +1,17 @@
+$primary-color: #6c5ce7;
+$main-color: black;
+$fav-color: aqua;
+
+body{
+    background-color: $main-color;
+}
+
+.card{
+    background-color: $primary-color;
+    h1{
+        color: $fav-color;
+    }
+    p{
+        color: $fav-color;
+    }
+}

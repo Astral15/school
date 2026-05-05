@@ -1,0 +1,15 @@
+body {
+  background-color: black;
+}
+
+.card {
+  background-color: #6c5ce7;
+}
+.card h1 {
+  color: aqua;
+}
+.card p {
+  color: aqua;
+}
+
+/*# sourceMappingURL=style.css.map */

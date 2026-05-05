@@ -1,0 +1,20 @@
+@mixin button-base ($bg){
+    border: none;
+    padding: 10px 18px;
+    color: aqua;
+    font-size: 16px;
+    background: $bg;
+  }
+  body{
+    background-color: aqua;
+  }
+  
+  .start-btn {
+    @include button-base (red);
+  }
+  
+  .more-btn {
+    @include button-base (seagreen);
+  }
+  
+   

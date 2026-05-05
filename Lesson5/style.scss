@@ -1,0 +1,590 @@
+// $base-space: 8px;
+// $primary: #2b1ba0;
+// $text: #2d3436;
+// $bg: #f8f8ff;
+
+// body {
+//   margin: 0;
+//   font-family: Arial, sans-serif;
+//   background: $bg;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   min-height: 100vh;
+// }
+
+// .math-card {
+//   width: 320px;
+//   background: white;
+//   padding: $base-space * 3;
+//   border-radius: $base-space * 2;
+//   box-shadow: 0 10px 30px rgba(108, 92, 231, 0.12);
+//   text-align: center;
+
+//   h2 {
+//     color: $primary;
+//     margin-bottom: $base-space * 2;
+//   }
+
+//   p {
+//     color: $text;
+//     margin-bottom: $base-space * 3;
+//   }
+
+//   button {
+//     padding: $base-space * 1.5 $base-space * 3;
+//     border: none;
+//     border-radius: $base-space * 1.5;
+//     background: $primary;
+//     color: white;
+//     cursor: pointer;
+//   }
+// }
+
+// 2
+// @use "sass:map";
+
+// $colors: (
+//   primary: #6c5ce7,
+//   success: #00b894,
+//   warning: #e17055,
+//   text: #2d3436
+// );
+
+// body {
+//   margin: 0;
+//   font-family: Arial, sans-serif;
+//   background: #f8f8ff;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   min-height: 100vh;
+// }
+
+// .map-box {
+//   width: 340px;
+//   background: white;
+//   padding: 24px;
+//   border-radius: 18px;
+//   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+//   h2 {
+//     color: map.get($colors, primary);
+//     margin-bottom: 16px;
+//   }
+// }
+
+// .primary-text {
+//   color: map.get($colors, primary);
+// }
+
+// .success-text {
+//   color: map.get($colors, success);
+// }
+
+// .warning-text {
+//   color: map.get($colors, warning);
+// } 
+
+// 3
+// $colors: (
+//   info: #0984e3,
+//   success: #00b894,
+//   warning: #e17055
+// );
+
+// body {
+//   margin: 0;
+//   font-family: Arial, sans-serif;
+//   background: #f8f8ff;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   min-height: 100vh;
+// }
+
+// .wrapper {
+//   width: 360px;
+// }
+
+// .status {
+//   color: white;
+//   padding: 16px;
+//   border-radius: 14px;
+//   margin-bottom: 12px;
+//   font-weight: bold;
+//   text-align: center;
+// }
+
+// @each $name, $color in $colors {
+//   .#{$name} {
+//     background-color: $color;
+//   }
+// }
+
+
+// 4
+// @mixin badge-style($level) {
+//     color: white;
+//     padding: 8px 14px;
+//     border-radius: 999px;
+//     font-size: 14px;
+//     font-weight: bold;
+//     display: inline-block;
+//     margin-right: 10px;
+  
+//     @if $level == easy {
+//       background-color: #00b894;
+//     } @else if $level == medium {
+//       background-color: #fdcb6e;
+//     } @else {
+//       background-color: #e73103;
+//     }
+//   }
+  
+//   body {
+//     margin: 0;
+//     font-family: Arial, sans-serif;
+//     background: #f8f8ff;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     min-height: 100vh;
+//   }
+  
+//   .card {
+//     width: 360px;
+//     background: white;
+//     padding: 24px;
+//     border-radius: 18px;
+//     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  
+//     h2 {
+//       margin-bottom: 20px;
+//       color: #6c5ce7;
+//     }
+//   }
+  
+//   .badge-easy {
+//     @include badge-style(easy);
+//   }
+  
+//   .badge-medium {
+//     @include badge-style(medium);
+//   }
+  
+//   .badge-hard {
+//     @include badge-style(hard);
+//   }
+
+
+
+// 5
+// @function space($n) {
+//     @return $n * 8px;
+//   }
+  
+//   $primary: #6c5ce7;
+//   $text: #2d3436;
+  
+//   body {
+//     margin: 0;
+//     font-family: Arial, sans-serif;
+//     background: #f8f8ff;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     min-height: 100vh;
+//   }
+  
+//   .function-card {
+//     width: 340px;
+//     background: white;
+//     padding: space(3);
+//     border-radius: space(3);
+//     box-shadow: 0 10px 30px rgba(108, 92, 231, 0.12);
+  
+//     h2 {
+//       color: $primary;
+//       margin-bottom: space(2);
+//     }
+  
+//     p {
+//       color: $text;
+//       margin-bottom: space(3);
+//     }
+  
+//     button {
+//       padding: space(1.5) space(3);
+//       border: none;
+//       border-radius: space(1.5);
+//       background: $primary;
+//       color: white;
+//       cursor: pointer;
+//     }
+//   }
+
+
+// 6) finall
+// @use "sass:map";
+
+// // ------------------------------
+// // VARIABLES
+// // ------------------------------
+// $primary: #6c5ce7;
+// $primary-dark: #5146e5;
+// $text: #2d3436;
+// $muted: #6c7080;
+// $bg: #f7f5ff;
+// $white: #ffffff;
+// $radius: 18px;
+// $shadow: 0 12px 30px rgba(108, 92, 231, 0.12);
+
+// // ------------------------------
+// // MATH + FUNCTION
+// // ------------------------------
+// $base-space: 8px;
+
+// @function space($n) {
+//   @return $n * $base-space;
+// }
+
+// // ------------------------------
+// // MAPS
+// // ------------------------------
+// $status-colors: (
+//   completed: #00b894,
+//   progress: #0984e3,
+//   practice: #e17055
+// );
+
+// // ------------------------------
+// // MIXINS
+// // ------------------------------
+// @mixin button-style($bg, $color) {
+//   background-color: $bg;
+//   color: $color;
+//   border: none;
+//   padding: space(1.5) space(3);
+//   border-radius: 999px;
+//   cursor: pointer;
+//   font-weight: bold;
+//   transition: 0.3s;
+
+//   &:hover {
+//     transform: translateY(-2px);
+//     opacity: 0.92;
+//   }
+// }
+
+// @mixin badge-style($level) {
+//   color: white;
+//   padding: 6px 12px;
+//   border-radius: 999px;
+//   font-size: 12px;
+//   font-weight: bold;
+
+//   @if $level == easy {
+//     background-color: #00b894;
+//   } @else if $level == medium {
+//     background-color: #fdcb6e;
+//   } @else {
+//     background-color: #e17055;
+//   }
+// }
+
+// // ------------------------------
+// // BASE
+// // ------------------------------
+// * {
+//   box-sizing: border-box;
+// }
+
+// body {
+//   margin: 0;
+//   font-family: Arial, sans-serif;
+//   background: linear-gradient(180deg, #f7f5ff 0%, #eef2ff 100%);
+//   color: $text;
+// }
+
+// .page {
+//   width: min(1200px, 92%);
+//   margin: 0 auto;
+//   padding: space(4) 0;
+// }
+
+// // ------------------------------
+// // HEADER
+// // ------------------------------
+// .header {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   padding: space(2.5) space(3);
+//   background: rgba(255, 255, 255, 0.72);
+//   backdrop-filter: blur(12px);
+//   border-radius: $radius;
+//   box-shadow: $shadow;
+//   margin-bottom: space(4);
+
+//   .logo {
+//     font-size: 24px;
+//     font-weight: bold;
+//     color: $primary-dark;
+//   }
+
+//   .nav {
+//     display: flex;
+//     gap: space(3);
+
+//     a {
+//       text-decoration: none;
+//       color: $muted;
+//       font-weight: 600;
+//       transition: 0.3s;
+
+//       &:hover {
+//         color: $primary-dark;
+//       }
+//     }
+//   }
+// }
+
+// // ------------------------------
+// // HERO
+// // ------------------------------
+// .hero {
+//   display: grid;
+//   grid-template-columns: 2fr 1fr;
+//   gap: space(3);
+//   background: linear-gradient(135deg, #efe9ff 0%, #ffffff 100%);
+//   border-radius: $radius;
+//   padding: space(4);
+//   box-shadow: $shadow;
+//   margin-bottom: space(4);
+
+//   .hero-content {
+//     h1 {
+//       margin-top: 0;
+//       margin-bottom: space(2);
+//       font-size: 42px;
+//       color: $primary-dark;
+//     }
+
+//     p {
+//       color: $muted;
+//       font-size: 18px;
+//       margin-bottom: space(3);
+//     }
+
+//     .hero-buttons {
+//       display: flex;
+//       gap: space(2);
+//       flex-wrap: wrap;
+//     }
+//   }
+
+//   .hero-box {
+//     background: $white;
+//     border-radius: $radius;
+//     padding: space(3);
+//     display: flex;
+//     justify-content: space-around;
+//     align-items: center;
+//     box-shadow: $shadow;
+
+//     .mini-stat {
+//       text-align: center;
+
+//       span {
+//         display: block;
+//         font-size: 28px;
+//         font-weight: bold;
+//         color: $primary-dark;
+//       }
+
+//       p {
+//         margin: 0;
+//         color: $muted;
+//       }
+//     }
+//   }
+// }
+
+// .primary-btn {
+//   @include button-style($primary, white);
+// }
+
+// .secondary-btn {
+//   @include button-style(white, $primary-dark);
+//   border: 1px solid #ddd;
+// }
+
+// // ------------------------------
+// // STATUSES
+// // ------------------------------
+// .statuses {
+//   display: grid;
+//   grid-template-columns: repeat(3, 1fr);
+//   gap: space(2);
+//   margin-bottom: space(4);
+// }
+
+// .status-card {
+//   padding: space(2.5);
+//   border-radius: $radius;
+//   color: white;
+//   font-weight: bold;
+//   text-align: center;
+//   box-shadow: $shadow;
+// }
+
+// // LOOP
+// @each $name, $color in $status-colors {
+//   .#{$name} {
+//     background-color: $color;
+//   }
+// }
+
+// // ------------------------------
+// // COURSES
+// // ------------------------------
+// .courses {
+//   display: grid;
+//   grid-template-columns: repeat(3, 1fr);
+//   gap: space(3);
+//   margin-bottom: space(4);
+// }
+
+// .course-card {
+//   background: $white;
+//   border-radius: $radius;
+//   padding: space(3);
+//   box-shadow: $shadow;
+//   transition: 0.3s;
+
+//   &:hover {
+//     transform: translateY(-4px);
+//   }
+
+//   .top-row {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     gap: space(2);
+//     margin-bottom: space(2);
+//   }
+
+//   h2 {
+//     margin: 0;
+//     color: $primary-dark;
+//     font-size: 22px;
+//   }
+
+//   p {
+//     color: $muted;
+//     line-height: 1.6;
+//     margin-bottom: space(3);
+//   }
+
+//   button {
+//     @include button-style($primary, white);
+//     width: 100%;
+//   }
+// }
+
+// .featured-card {
+//   background: linear-gradient(180deg, #ffffff 0%, #f3eeff 100%);
+//   border: 2px solid #d9ceff;
+// }
+
+// // ------------------------------
+// // IF BADGES
+// // ------------------------------
+// .badge-easy {
+//   @include badge-style(easy);
+// }
+
+// .badge-medium {
+//   @include badge-style(medium);
+// }
+
+// .badge-hard {
+//   @include badge-style(hard);
+// }
+
+// // ------------------------------
+// // STATS
+// // ------------------------------
+// .stats {
+//   margin-bottom: space(4);
+// }
+
+// .stats-card {
+//   background: $white;
+//   border-radius: $radius;
+//   padding: space(3);
+//   box-shadow: $shadow;
+
+//   h3 {
+//     margin-top: 0;
+//     color: $primary-dark;
+//     margin-bottom: space(2);
+//   }
+
+//   .progress-bar {
+//     width: 100%;
+//     height: 16px;
+//     background: #ece8ff;
+//     border-radius: 999px;
+//     overflow: hidden;
+//     margin-bottom: space(2.5);
+
+//     .progress-fill {
+//       width: 85%;
+//       height: 100%;
+//       background: linear-gradient(90deg, #6c5ce7, #8f7cff);
+//       border-radius: 999px;
+//     }
+//   }
+
+//   .stats-row {
+//     display: flex;
+//     justify-content: space-between;
+//     flex-wrap: wrap;
+//     gap: space(2);
+//     color: $muted;
+//     font-weight: 600;
+//   }
+// }
+
+// // ------------------------------
+// // FOOTER
+// // ------------------------------
+// .footer {
+//   text-align: center;
+//   padding: space(2);
+//   color: $muted;
+//   font-size: 14px;
+// }
+
+// // ------------------------------
+// // RESPONSIVE
+// // ------------------------------
+// @media (max-width: 900px) {
+//   .hero,
+//   .statuses,
+//   .courses {
+//     grid-template-columns: 1fr;
+//   }
+
+//   .header {
+//     flex-direction: column;
+//     gap: space(2);
+//   }
+
+//   .nav {
+//     flex-wrap: wrap;
+//     justify-content: center;
+//   }
+// }

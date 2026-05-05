@@ -1,0 +1,50 @@
+body {
+  background-color: #f1f2f6;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: center;
+}
+.container h1 {
+  color: #6c5ce7;
+  font-size: 34px;
+}
+.container .intro {
+  color: #2d3436;
+  font-size: 18px;
+}
+.container .box {
+  width: 500px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 14px;
+}
+.container .box h2 {
+  color: #6c5ce7;
+}
+.container .box p {
+  color: #2d3436;
+  font-size: 17px;
+  line-height: 1.6;
+}
+.container .box .buttons .start-btn {
+  background-color: #6c5ce7;
+  color: #ffffff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+}
+.container .box .buttons .more-btn {
+  background-color: #00b894;
+  color: #ffffff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+}
+.container .footer-text {
+  color: #2d3436;
+  font-size: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */

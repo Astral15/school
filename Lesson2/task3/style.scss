@@ -1,0 +1,67 @@
+$primary-color: #6c5ce7;
+$text-color: #2d3436;
+$page-bg: #f1f2f6;
+$box-bg: #ffffff;
+$button-text: #ffffff;
+$secondary-color: #00b894;
+$spacing: 20px;
+$radius: 14px;
+
+body {
+  background-color: $page-bg;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: center;
+
+  h1 {
+    color: $primary-color;
+    font-size: 34px;
+  }
+
+  .intro {
+    color: $text-color;
+    font-size: 18px;
+  }
+
+  .box {
+    width: 500px;
+    background-color: $box-bg;
+    padding: $spacing;
+    border-radius: $radius;
+
+    h2 {
+      color: $primary-color;
+    }
+
+    p {
+      color: $text-color;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    .buttons {
+      .start-btn {
+        background-color: $primary-color;
+        color: $button-text;
+        border: none;
+        padding: 10px 18px;
+        border-radius: 8px;
+      }
+
+      .more-btn {
+        background-color: $secondary-color;
+        color: $button-text;
+        border: none;
+        padding: 10px 18px;
+        border-radius: 8px;
+      }
+    }
+  }
+
+  .footer-text {
+    color: $text-color;
+    font-size: 15px;
+  }
+}

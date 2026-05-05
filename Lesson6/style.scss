@@ -1,0 +1,462 @@
+// task1
+// $primary: #6c5ce7;
+// $primary-dark: #5146e5;
+// $text: #2d3436;
+// $muted: #6b7280;
+// $bg: #f7f5ff;
+// $white: #ffffff;
+// $radius: 18px;
+// $space: 8px;
+// $shadow: 0 14px 34px rgba(108, 92, 231, 0.12);
+
+// @mixin button-style($bg, $color) {
+//   background-color: $bg;
+//   color: $color;
+//   border: none;
+//   border-radius: 999px;
+//   padding: $space * 1.5 $space * 3;
+//   font-weight: 700;
+//   cursor: pointer;
+//   transition: 0.25s;
+
+//   &:hover {
+//     transform: translateY(-2px);
+//     opacity: 0.95;
+//   }
+// }
+
+// %panel-base {
+//   background: $white;
+//   border-radius: $radius;
+//   box-shadow: $shadow;
+// }
+
+// %info-box-base {
+//   @extend %panel-base;
+//   padding: $space * 3;
+//   text-align: center;
+// }
+
+// * {
+//   box-sizing: border-box;
+// }
+
+// body {
+//   margin: 0;
+//   font-family: Arial, sans-serif;
+//   background: linear-gradient(180deg, #f7f5ff 0%, #eef2ff 100%);
+//   color: $text;
+// }
+
+// .page {
+//   width: min(1100px, 92%);
+//   margin: 0 auto;
+//   padding: $space * 4 0;
+// }
+
+// .header {
+//   @extend %panel-base;
+//   padding: $space * 2.5 $space * 3;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   margin-bottom: $space * 4;
+
+//   .logo {
+//     font-size: 28px;
+//     font-weight: 800;
+//     color: $primary-dark;
+//   }
+
+//   .nav {
+//     display: flex;
+//     gap: $space * 3;
+
+//     a {
+//       text-decoration: none;
+//       color: $muted;
+//       font-weight: 600;
+
+//       &:hover {
+//         color: $primary-dark;
+//       }
+//     }
+//   }
+// }
+
+// .profile-hero {
+//   @extend %panel-base;
+//   display: grid;
+//   grid-template-columns: 220px 1fr;
+//   gap: $space * 4;
+//   align-items: center;
+//   padding: $space * 4;
+//   margin-bottom: $space * 4;
+//   background: linear-gradient(135deg, #efe9ff 0%, #ffffff 100%);
+// }
+
+// .profile-avatar {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+
+//   .avatar-circle {
+//     width: 160px;
+//     height: 160px;
+//     border-radius: 50%;
+//     background: linear-gradient(135deg, #d9ceff 0%, #b7aaff 100%);
+//     color: white;
+//     font-size: 60px;
+//     font-weight: 800;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//   }
+// }
+
+// .profile-content {
+//   h1 {
+//     margin: 0 0 $space * 1.5;
+//     font-size: 44px;
+//     color: $primary-dark;
+//   }
+
+//   p {
+//     margin: 0 0 $space * 3;
+//     font-size: 20px;
+//     color: $muted;
+//   }
+// }
+
+// .btn-primary {
+//   @include button-style($primary, white);
+// }
+
+// .info-grid {
+//   display: grid;
+//   grid-template-columns: repeat(3, 1fr);
+//   gap: $space * 2;
+//   margin-bottom: $space * 4;
+// }
+
+// .info-box {
+//   @extend %info-box-base;
+
+//   h3 {
+//     margin: 0 0 $space * 1.5;
+//     color: $muted;
+//     font-size: 18px;
+//   }
+
+//   span {
+//     font-size: 42px;
+//     font-weight: 800;
+//     color: $primary-dark;
+//   }
+
+//   &.practice span {
+//     color: #00b894;
+//   }
+// }
+
+// .courses-grid {
+//   display: grid;
+//   grid-template-columns: repeat(2, 1fr);
+//   gap: $space * 3;
+//   margin-bottom: $space * 4;
+// }
+
+// .course-card {
+//   @extend %panel-base;
+//   padding: $space * 3;
+//   transition: 0.25s;
+
+//   &:hover {
+//     transform: translateY(-4px);
+//   }
+
+//   .course-top {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     gap: $space * 2;
+//     margin-bottom: $space * 2;
+//   }
+
+//   h2 {
+//     margin: 0;
+//     color: $primary-dark;
+//     font-size: 28px;
+//   }
+
+//   p {
+//     margin: 0 0 $space * 3;
+//     color: $muted;
+//     line-height: 1.7;
+//   }
+// }
+
+// .featured-card {
+//   border: 2px solid #ddd2ff;
+//   background: linear-gradient(180deg, #ffffff 0%, #f3eeff 100%);
+// }
+
+// .badge {
+//   display: inline-block;
+//   padding: 6px 12px;
+//   border-radius: 999px;
+//   color: white;
+//   font-size: 12px;
+//   font-weight: 700;
+
+//   &.easy {
+//     background: #00b894;
+//   }
+
+//   &.medium {
+//     background: #fdcb6e;
+//     color: #5b4300;
+//   }
+// }
+
+// .footer {
+//   text-align: center;
+//   color: $muted;
+//   font-size: 14px;
+//   padding: $space * 2;
+// }
+
+// @media (max-width: 850px) {
+//   .profile-hero,
+//   .info-grid,
+//   .courses-grid {
+//     grid-template-columns: 1fr;
+//   }
+
+//   .header {
+//     flex-direction: column;
+//     gap: $space * 2;
+//   }
+
+//   .nav {
+//     flex-wrap: wrap;
+//     justify-content: center;
+//   }
+// }
+
+
+
+
+
+
+// task 2)
+// $primary: #6c5ce7;
+// $primary-dark: #5146e5;
+// $text: #2d3436;
+// $muted: #6b7280;
+// $bg: #f7f5ff;
+// $white: #ffffff;
+// $radius: 18px;
+// $space: 8px;
+// $shadow: 0 14px 34px rgba(108, 92, 231, 0.12);
+
+// @mixin button-style($bg, $color) {
+//   background-color: $bg;
+//   color: $color;
+//   border: none;
+//   border-radius: 999px;
+//   padding: $space * 1.4 $space * 2.8;
+//   font-weight: 700;
+//   cursor: pointer;
+//   transition: 0.25s;
+
+//   &:hover {
+//     transform: translateY(-2px);
+//     opacity: 0.95;
+//   }
+// }
+
+// %panel-base {
+//   background: $white;
+//   border-radius: $radius;
+//   box-shadow: $shadow;
+// }
+
+// %category-box-base {
+//   @extend %panel-base;
+//   padding: $space * 2.2;
+//   text-align: center;
+//   font-weight: 700;
+//   color: $primary-dark;
+// }
+
+// %card-base {
+//   @extend %panel-base;
+//   padding: $space * 3;
+// }
+
+// * {
+//   box-sizing: border-box;
+// }
+
+// body {
+//   margin: 0;
+//   font-family: Arial, sans-serif;
+//   background: linear-gradient(180deg, #f8f6ff 0%, #eef2ff 100%);
+//   color: $text;
+// }
+
+// .page {
+//   width: min(1150px, 92%);
+//   margin: 0 auto;
+//   padding: $space * 4 0;
+// }
+
+// .header {
+//   @extend %panel-base;
+//   padding: $space * 2.5 $space * 3;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   margin-bottom: $space * 4;
+
+//   .logo {
+//     font-size: 28px;
+//     font-weight: 800;
+//     color: $primary-dark;
+//   }
+
+//   .nav {
+//     display: flex;
+//     gap: $space * 3;
+
+//     a {
+//       text-decoration: none;
+//       color: $muted;
+//       font-weight: 600;
+
+//       &:hover {
+//         color: $primary-dark;
+//       }
+//     }
+//   }
+// }
+
+// .hero {
+//   @extend %panel-base;
+//   background: linear-gradient(135deg, #efe9ff 0%, #ffffff 100%);
+//   padding: $space * 4;
+//   margin-bottom: $space * 4;
+//   text-align: center;
+
+//   h1 {
+//     margin: 0 0 $space * 2;
+//     font-size: 46px;
+//     color: $primary-dark;
+//   }
+
+//   p {
+//     margin: 0 0 $space * 3;
+//     color: $muted;
+//     font-size: 18px;
+//   }
+// }
+
+// .btn-primary {
+//   @include button-style($primary, white);
+// }
+
+// .categories {
+//   display: grid;
+//   grid-template-columns: repeat(4, 1fr);
+//   gap: $space * 2;
+//   margin-bottom: $space * 4;
+// }
+
+// .category-box {
+//   @extend %category-box-base;
+// }
+
+// .catalog-grid {
+//   display: grid;
+//   grid-template-columns: repeat(3, 1fr);
+//   gap: $space * 3;
+//   margin-bottom: $space * 4;
+// }
+
+// .course-card {
+//   @extend %card-base;
+//   display: flex;
+//   flex-direction: column;
+//   gap: $space * 2;
+//   transition: 0.25s;
+
+//   &:hover {
+//     transform: translateY(-4px);
+//   }
+
+//   h2 {
+//     margin: 0;
+//     color: $primary-dark;
+//     font-size: 26px;
+//   }
+
+//   p {
+//     margin: 0;
+//     color: $muted;
+//     line-height: 1.7;
+//     flex: 1;
+//   }
+// }
+
+// .featured-card {
+//   border: 2px solid #ddd2ff;
+//   background: linear-gradient(180deg, #ffffff 0%, #f3eeff 100%);
+// }
+
+// .badge {
+//   display: inline-block;
+//   width: fit-content;
+//   padding: 6px 12px;
+//   border-radius: 999px;
+//   color: white;
+//   font-size: 12px;
+//   font-weight: 700;
+
+//   &.easy {
+//     background: #00b894;
+//   }
+
+//   &.medium {
+//     background: #fdcb6e;
+//     color: #5b4300;
+//   }
+
+//   &.hard {
+//     background: #e17055;
+//   }
+// }
+
+// .footer {
+//   text-align: center;
+//   color: $muted;
+//   font-size: 14px;
+//   padding: $space * 2;
+// }
+
+// @media (max-width: 950px) {
+//   .categories,
+//   .catalog-grid {
+//     grid-template-columns: 1fr;
+//   }
+
+//   .header {
+//     flex-direction: column;
+//     gap: $space * 2;
+//   }
+
+//   .nav {
+//     flex-wrap: wrap;
+//     justify-content: center;
+//   }
+// }

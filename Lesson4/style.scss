@@ -1,0 +1,50 @@
+//  .message {
+//     color: white;
+//     background-color: #6c5ce7;
+//     border: 1px solid #6c5ce7;
+//     padding: 16px;
+//     border-radius: 12px;
+//   }
+  
+//   .success {
+//     @extend .message;
+//     background-color: #00b894;
+//     border-color: #00b894;
+//   }
+
+// 2
+// %card-base {
+//     background-color: rgb(236, 9, 24);
+//     border: 1px solid #dfe6e9;
+//     padding: 20px;
+//     border-radius: 12px;
+//   }
+  
+//   .profile-card {
+//     @extend %card-base;
+//   }
+  
+//   .product-card {
+//     @extend %card-base;
+//   }
+
+// 3
+%box-base {
+    color: white;
+    padding: 30px;
+    font-weight: bold;
+    margin: 20px;
+  }
+  
+  .info-box {
+    @extend %box-base;
+    background: #0984e3;
+  }
+  .success-box {
+    @extend %box-base;
+    background: #00b894;
+  }
+  .warning-box {
+    @extend %box-base;
+    background: #e17055;
+  }
